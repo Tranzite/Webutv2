@@ -1,0 +1,21 @@
+
+header {
+
+    background: lightblue;
+    height: 100vh;
+    button{
+        &:hover{
+            background: green;
+        }
+    }
+}
+
+$primaryButton: rgb(56, 146, 142);
+$textColor: rgb(45,45,45);
+
+.contact {
+    background: lightcoral;
+    background: rgb(168,58,58);
+
+}
+// $ = variabel 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie</title>
+</head>
+<body>
+    <script src="simple.js">
+        var zombie = {x: random(totalWidth), y:random(totalHeight), speed:random(1,5)};
+        var zombies = [];
+        
+        for(i = 0; i < 100; i++){
+            zombies.push({x: random(totalWidth), y:random(totalHeight), speed:random(1,5)});
+        }
+
+        function update(){
+            clearScreen();
+            var i = 0;
+            while(i < 10){ // detta skapar 10 zombies
+                var zombie = zombies[i];
+
+                picture(zombie.x, zombie.y, "philSwiftHere.png"); //bild på zombiesen
+                if(zombie.x < mouse.x ){
+                    zombie.x += zombie.speed;
+                }
+                else {
+                    zombie.x -= zombie.speed;
+                }
+                if(zombie.y < mouse.y ){
+                    zombie.y += zombie.speed;
+                }
+                else {
+                    zombie.y -= zombie.speed;
+                }
+                if (distance(mouse, zombie) < 5){
+                    alert("Game over");
+                    stopUpdate();
+                }
+                i += 1;
+            }
+        }
+    </script>
+</body>
+</html>

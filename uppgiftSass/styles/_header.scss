@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+    
+    background: $bgColor;
+    height: 100vh;
+    color: $textColor;
+    button{
+        width: 300px;
+        &:hover{
+            background: green;
+        }
+    }
+    
+}

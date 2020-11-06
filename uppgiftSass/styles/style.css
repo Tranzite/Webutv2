@@ -1,0 +1,66 @@
+header {
+  text-align: center;
+  background: #cccca9;
+  height: 100vh;
+  color: black;
+}
+
+header button {
+  width: 300px;
+}
+
+header button:hover {
+  background: green;
+}
+
+* {
+  background-color: #cccca9;
+  color: black;
+}
+
+#left {
+  width: 20%;
+  float: left;
+  width: 20%;
+  margin-top: 20px;
+}
+
+#middle {
+  border: 2px solid black;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+
+#right {
+  height: 100%;
+  width: 20%;
+  float: right;
+  margin-top: -325px;
+}
+
+#ability1 {
+  text-align: left;
+  border: 2px solid black;
+  color: black;
+}
+
+#ability2 {
+  text-align: left;
+  border: 2px solid black;
+  color: black;
+}
+
+#ability3 {
+  text-align: left;
+  border: 2px solid black;
+  color: black;
+}
+
+#main2 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  float: right;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="simple.js">
+        
+
+        function start()
+    
+        {
+            
+            for (var i=1; i<=500; i++)
+            {
+
+                var colors = Math.floor(Math.random()*4);
+            
+        
+                if(colors == 0)
+                {
+                    color = "red";
+                }
+                else if(colors == 1)
+                {
+                    color = "blue";
+                }
+                else if(colors == 2)
+                {
+                    color = "yellow";
+                }
+                else{
+                    color = "green";
+                }
+
+                line(random(1,200),random(1,200),10,10,5,color);
+            }
+        }
+    </script>
+</body>
+</html>
